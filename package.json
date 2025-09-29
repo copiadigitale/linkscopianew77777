@@ -1,0 +1,10 @@
+{
+  "name": "copia-digitale-links",
+  "version": "1.0.0",
+  "description": "A link-in-bio page for the tech company Copia Digitale.",
+  "scripts": {
+    "build": "echo \"Build step not required for this static site.\""
+  },
+  "author": "Copia Digitale",
+  "license": "ISC"
+}

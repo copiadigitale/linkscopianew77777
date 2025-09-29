@@ -1,0 +1,137 @@
+:root {
+  --background-color: #dff3ff;
+  --surface-color: #ffffff;
+  --primary-text-color: #1f2937;
+  --secondary-text-color: #6b7280;
+  --border-color: #e5e7eb;
+  --accent-color: #3b82f6;
+  --hover-bg-color: #f9fafb;
+  --button-bg-color: #59789d;
+  --button-text-color: #ffffff;
+  --button-hover-bg-color: #6988ad;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+}
+
+#app {
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.logo {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--primary-text-color);
+}
+
+header p {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link-card {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link-card:hover, .link-card:focus {
+  transform: translateY(-3px) scale(1.02);
+  background-color: var(--button-hover-bg-color);
+  outline: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.link-card:active {
+    transform: translateY(-1px) scale(1);
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.cta-section {
+  margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--primary-text-color);
+}
+
+.cta-link {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.cta-link:hover, .cta-link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: var(--secondary-text-color);
+}
